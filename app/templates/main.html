@@ -5,19 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    {% comment %} fontawesome css {% endcomment %}
+    <link 
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    {% comment %} jquery {% endcomment %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    {% comment %} main.css {% endcomment %}
     <link rel="stylesheet" href="{% static 'main.css' %} ">
-    <title>Document</title>
+
+    <title>shamsu cm </title>
     
 </head>
 <body>
 
+    {% comment %} first page  {% endcomment %}
     <section id="main-view">
 
-        <div class="main-nav_div">
+        <div id ="mynav"class="main-nav_div">
             <ul>
+               <a href="#main-view"><li>Home</li></a> 
                <a href="#portfolio"><li>Portfolio</li></a> 
                <a href="#about"><li>About</li></a>
-               <a href="#contact"><li>Contact</li></a>
+               <a href="#subheading_contact"><li>Contact & Social</li></a>
             </ul>
         </div>
 
@@ -28,19 +46,155 @@
         
     </section>
 
-
+    {% comment %} portfoli page {% endcomment %}
     <section id="portfolio">
+        <h1 class="subheading">My Works</h1>
+        <div class="portfolio-works">
 
+            {% for b in details_of_works %}
+
+                  <div class="card">
+                    <div class="portfolio-works-image_div">
+                        <img src="{% static b.img %}" class="card-img-top resize-card-img"  alt="loading">
+                         <div class="card-body portfolio-works-image_text" >
+                            <h5  class="card-title">{{b.name}}</h5>
+                            <div class="card-body-description">
+                                <p name="description"class="card-text ">{{b.des}}</p> 
+                            </div>
+                            
+
+                            <div>
+                                <button class="btn btn-secondary">visit website</button>
+                                <button class="btn btn-secondary"> visit code on github</button>
+                            </div>
+                        </div> 
+                        
+                        
+                    </div>
+                    
+                   
+                </div>
+
+             {% endfor %}
+        
+        </div>
+
+        <button class="portfolio-button btn btn-warning">See more works on github</button>
+
+        
     </section>
+    
 
+    {% comment %} about page {% endcomment %}
     <section id="about">
+
+        <h1 class="subheading"> About </h1>
+        <div class="about-card_wrap">
+            
+            <div class="about-card">
+                <h4>about me</h4>
+                <hr>
+                <ul>
+                    <li><p> i'am doing backend developing with python django , i'am doing also front-end work with html , css , little js <br></p></li>
+                    <li><p>i developed some websites with django whether it's useful or not , enjoyed when i developing those, wish to continue this <br></p></li>
+                    <li><p>studying BCA in ignou , i wish to do MCA after this</p></li>
+                </ul>
+            </div>
+
+            <div class="about-card" >
+                <h4>about works</h4>
+                <hr>
+                
+                <ul class="about-card_work">
+                    <h6>Tools</h6>
+                        <p >- vs code</p>
+                        <p>- figma</p>
+                        <p>- github</p>
+                        <p>- excel</p>
+                    <h6>language</h6>
+                        <p>- python</p>
+                        <p>- html</p>
+                        <p>- css</p>
+                        <p>- javascript</p>
+                    <h6>framework</h6>
+                        <p>- djnago</p>
+
+                </ul>
+            </div>
+         
+            <div class="about-card" >
+                <h4>about me</h4>
+                <hr>
+                <ul class="about-card_me">
+                    <h6>address</h6>
+                    <li><p>shamsudheen choyimadathil, choyimadathil(H), kannamangalam P.O, 676304 vengara, malappuram, kerala, india <br></p></li>
+                    <h6>resume and cv</h6>
+                    <li><p><a href="">download resume and cv</a> <br></p></li>
+                    <h6>contact me</h6>
+                    <li><p>+91 81 29 73 9242</p></li>
+                </ul>
+            </div>
+
+        
+        </div>
     
     </section>
 
-    <section id"contact">
-    
-    </section>
+    <section class="contact-social">
 
+        <div id="contact">
+                <h1 class="subheading " id="subheading_contact">message me...</h1>
+
+
+            <div>
+        
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <label for="">Your name:</label><br>
+                    <input name="name" type="text" class="form-control" placeholder="name"><br>
+                    <label for="">Your email:</label><br>
+                    <input name="email" type="email" class="form-control" placeholder="email"><br>
+                    <label for="">message:</label> <br>
+                    <textarea name="message" name="message" placeholder="message..." class="form-control" id="" cols="30" rows="10"></textarea> <br>
+                    <button class="btn btn-secondary">Send message</button>
+                </form>
+            
+            </div> 
+
+        
+            
+
+        </div>
+
+        <div id="social">
+
+            <div class="social_footer">
+
+                <div class="social-text_div">
+                    <p>Living, learning, leveling up one day </p>
+                </div>
+                <div class="social-img_div">
+                    <a href=""><i class="fab fa-github social-img" style="color:gray"></i></a>
+                    <a href=""><i class="fab fa-stack-overflow social-img" style="color:#ef8236"></i></a>
+                    <a href=""><i class="fab fa-reddit-square social-img" style="color:red"></i></a>
+                    <a href=""><i class="fab fa-instagram social-img" style="color: rgb(189, 0, 189);"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in social-img" style="color:#0e76a8"></i></a>
+                </div>
+                <div class="social-copyright_div">
+                    <p>created by me © shamsu cm </p>
+                </div>
+
+            </div>
+        
+        </div>
+
+    </section> 
+
+    <!-- bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    {% comment %} main.js {% endcomment %}
     <script src="{% static 'main.js' %}"></script>
 </body>
 </html>
