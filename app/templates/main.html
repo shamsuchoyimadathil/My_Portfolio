@@ -30,6 +30,7 @@
     {% comment %} first page  {% endcomment %}
     <section id="main-view">
 
+        
         <div id ="mynav"class="main-nav_div">
             <ul>
                <a href="#main-view"><li>Home</li></a> 
@@ -37,10 +38,10 @@
                <a href="#about"><li>About</li></a>
                <a href="#subheading_contact"><li>Contact & Social</li></a>
             </ul>
-        </div>
+        </div> 
 
         <div class="main-text_div">
-            <h1>Hey I'am Shamsu cm </h1>
+            <h1>Hey I'am Shamsu cm </h1>    
             <h4>I'am a Developer </h4>
         </div>
         
@@ -79,7 +80,7 @@
         
         </div>
 
-        <button class="portfolio-button btn btn-warning">See more works on github</button>
+        <button class="portfolio-button btn btn-warning"><a href="https://github.com/shamsuchoyimadathil/">See more works on github</a> </button>
 
         
     </section>
@@ -95,9 +96,9 @@
                 <h4>about me</h4>
                 <hr>
                 <ul>
-                    <li><p> i'am doing backend developing with python django , i'am doing also front-end work with html , css , little js <br></p></li>
-                    <li><p>i developed some websites with django whether it's useful or not , enjoyed when i developing those, wish to continue this <br></p></li>
-                    <li><p>studying BCA in ignou , i wish to do MCA after this</p></li>
+                    <li><p> I am doing backend developing with Python & Django. I am also doing front-end work with HTML, CSS and Little Js.<br></p></li>
+                    <li><p>I developed some websites with Django and whether it's useful or not, I enjoyed developing them. <br></p></li>
+                    <li><p> I wish to continue studying BCA in Ignou and do MCA after this.</p></li>
                 </ul>
             </div>
 
@@ -107,15 +108,17 @@
                 
                 <ul class="about-card_work">
                     <h6>Tools</h6>
-                        <p >- vs code</p>
+                        <p>- vs code</p>
                         <p>- figma</p>
                         <p>- github</p>
                         <p>- excel</p>
+                        <p>- linux</p>
                     <h6>language</h6>
                         <p>- python</p>
                         <p>- html</p>
                         <p>- css</p>
                         <p>- javascript</p>
+                        <p>- Sql</p>
                     <h6>framework</h6>
                         <p>- djnago</p>
 
@@ -127,10 +130,19 @@
                 <hr>
                 <ul class="about-card_me">
                     <h6>address</h6>
-                    <li><p>shamsudheen choyimadathil, choyimadathil(H), kannamangalam P.O, 676304 vengara, malappuram, kerala, india <br></p></li>
+                    <li><p>shamsudheen choyimadathil, PIN: 676304, malappuram, kerala, india <br></p></li>
                     <h6>resume and cv</h6>
-                    <li><p><a href="">download resume and cv</a> <br></p></li>
+
+
+
+
+                    <li><p><a href="Resume.pdf" download>download resume and cv</a> <br></p></li>
                     <h6>contact me</h6>
+
+
+
+
+                    
                     <li><p>+91 81 29 73 9242</p></li>
                 </ul>
             </div>
@@ -155,8 +167,9 @@
                     <label for="">Your email:</label><br>
                     <input name="email" type="email" class="form-control" placeholder="email"><br>
                     <label for="">message:</label> <br>
-                    <textarea name="message" name="message" placeholder="message..." class="form-control" id="" cols="30" rows="10"></textarea> <br>
-                    <button class="btn btn-secondary">Send message</button>
+                    <textarea type="text" name="message" placeholder="message..." class="form-control" id="" cols="30" rows="10"></textarea> <br>
+                    <button class="btn btn-secondary">Send message</button> 
+                    <h4 class="text-justify text-center pt-3 text-dark">{{no_info}}</h4>
                 </form>
             
             </div> 

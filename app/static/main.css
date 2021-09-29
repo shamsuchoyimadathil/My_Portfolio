@@ -1,7 +1,9 @@
 *,body{
     padding: 0;
     margin: 0;
+
 }
+
 
 /* main page styles */
 
@@ -200,6 +202,11 @@
     align-items: center;
 }
 
+.portfolio-button a{
+    color: inherit;
+    text-decoration: none;
+}
+
 .portfolio-button:hover{
     background-color: #facc42;
 }
@@ -293,7 +300,6 @@ textarea[name="message"]{
     resize: none;
     height: 150px;
 } 
-
 
 .social-text_div{
     width: 60%;
@@ -393,10 +399,16 @@ textarea[name="message"]{
 
 @media only screen and (max-width: 680px) {
 
+    .main-nav_div{
+        text-align: left;
+    }
+
     .main-nav_div li{
         font-size: 100%;
-        padding: 0 2.5%;        
+        padding: 0 2%;       
     }
+
+    
 
     .main-text_div h1{
         font-size: 40px;
@@ -418,6 +430,9 @@ textarea[name="message"]{
         margin: 0 1.5%;
     }
     
+    #contact form{
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width: 550px){
