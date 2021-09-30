@@ -10,4 +10,3 @@ window.onscroll = function () {
         myNav.classList.remove("nav-colored");
     }
 };
-

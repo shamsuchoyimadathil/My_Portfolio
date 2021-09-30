@@ -9,7 +9,7 @@
 
 /* background */
 #main-view{
-    background-image: url("cool-background.png");
+    background-image: url("media/cool-background.png");
     background-repeat: no-repeat;
     background-size: 100% 700px;
     box-sizing: border-box;
@@ -50,7 +50,7 @@
 
 
 .nav-colored { 
-    background-image: url("cool-background.png");
+    background-image: url("media/cool-background.png");
     background-repeat: no-repeat;
     background-size: 100% 700px;
  }
@@ -394,6 +394,11 @@ textarea[name="message"]{
         margin: 0 15%;
     }
 
+    .social-text_div{
+        font-size: 1.8rem;
+        width: 80%;
+    }
+
 
 }
 
@@ -433,6 +438,10 @@ textarea[name="message"]{
     #contact form{
         width: 95%;
     }
+
+    /* .social-text_div p{
+        font-size: 1rem;
+    } */
 }
 
 @media only screen and (max-width: 550px){
