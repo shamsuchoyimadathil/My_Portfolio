@@ -9,23 +9,29 @@ import os
 
 
 content = (
-    {"des":"it's simple photo app ,you can download images , also upload to this app",
-    "name":"recipe app","img":"media/main_background.jpeg",},
+    {"des":"it's food recipe app , collection of recipes , you can add,favourite,search them",
+    "name":"recipe app","img":"media/food_recipe.jpeg", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
+    "git":"https://github.com/shamsuchoyimadathil/food_recipes_app"},
 
-    {"des":"it's simple todo app , you can add recipes , search recipes ,etc ...",
-    "name":"recipe app","img":"media/main_background.jpeg",},
+    {"des":"it's food recipe app , collection of recipes , you can add,favourite,search them",
+    "name":"recipe app","img":"media/food_recipe.jpeg", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
+    "git":"https://github.com/shamsuchoyimadathil/food_recipes_app"},
 
-    {"des":"it's simple photo app ,you can download images , also upload to this app",
-    "name":"recipe app","img":"media/main_background.jpeg",},
+    {"des":"it's food recipe app , collection of recipes , you can add,favourite,search them",
+    "name":"recipe app","img":"media/food_recipe.jpeg", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
+    "git":"https://github.com/shamsuchoyimadathil/food_recipes_app"},
 
-    {"des":"it's simple todo app , you can add recipes , search recipes ,etc ...",
-    "name":"recipe app","img":"media/main_background.jpeg",},
+    {"des":"it's food recipe app , collection of recipes , you can add,favourite,search them",
+    "name":"recipe app","img":"media/food_recipe.jpeg", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
+    "git":"https://github.com/shamsuchoyimadathil/food_recipes_app"},
 
-    {"des":"it's simple photo app ,you can download images , also upload to this app",
-    "name":"recipe app","img":"media/main_background.jpeg",},
+    {"des":"it's food recipe app , collection of recipes , you can add,favourite,search them",
+    "name":"recipe app","img":"media/food_recipe.jpeg", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
+    "git":"https://github.com/shamsuchoyimadathil/food_recipes_app"},
 
-    {"des":"it's simple todo app , you can add recipes , search recipes ,etc ...",
-    "name":"recipe app","img":"media/main_background.jpeg",},
+    {"des":"it's food recipe app , collection of recipes , you can add,favourite,search them",
+    "name":"recipe app","img":"media/food_recipe.jpeg", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
+    "git":"https://github.com/shamsuchoyimadathil/food_recipes_app"},
 )
 
 
