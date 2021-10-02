@@ -10,27 +10,27 @@ import os
 
 content = (
     {"des":"it's food recipe app , collection of recipes , you can add,favourite,search them",
-    "name":"recipe app","img":"media/food_recipe.jpeg", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
+    "name":"recipe app","img":"media/food_recipe.png", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
     "git":"https://github.com/shamsuchoyimadathil/food_recipes_app"},
 
     {"des":"it's food recipe app , collection of recipes , you can add,favourite,search them",
-    "name":"recipe app","img":"media/food_recipe.jpeg", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
+    "name":"recipe app","img":"media/food_recipe.png", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
     "git":"https://github.com/shamsuchoyimadathil/food_recipes_app"},
 
     {"des":"it's food recipe app , collection of recipes , you can add,favourite,search them",
-    "name":"recipe app","img":"media/food_recipe.jpeg", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
+    "name":"recipe app","img":"media/food_recipe.png", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
     "git":"https://github.com/shamsuchoyimadathil/food_recipes_app"},
 
     {"des":"it's food recipe app , collection of recipes , you can add,favourite,search them",
-    "name":"recipe app","img":"media/food_recipe.jpeg", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
+    "name":"recipe app","img":"media/food_recipe.png", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
     "git":"https://github.com/shamsuchoyimadathil/food_recipes_app"},
 
     {"des":"it's food recipe app , collection of recipes , you can add,favourite,search them",
-    "name":"recipe app","img":"media/food_recipe.jpeg", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
+    "name":"recipe app","img":"media/food_recipe.png", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
     "git":"https://github.com/shamsuchoyimadathil/food_recipes_app"},
 
     {"des":"it's food recipe app , collection of recipes , you can add,favourite,search them",
-    "name":"recipe app","img":"media/food_recipe.jpeg", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
+    "name":"recipe app","img":"media/food_recipe.png", "site":"https://chakkatherecipemanager.herokuapp.com/" ,
     "git":"https://github.com/shamsuchoyimadathil/food_recipes_app"},
 )
 
