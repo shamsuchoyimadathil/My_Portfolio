@@ -4,144 +4,92 @@
 
 }
 
-
 /* main page styles */
 
-/* background */
 #main-view{
-    background-image: url("media/cool-background.png");
-    background-repeat: no-repeat;
-    background-size: 100% 700px;
-    box-sizing: border-box;
-    width: 100%;
-    height: 650px;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    box-shadow: 0rem 0rem 10rem 5px rgb(216, 214, 214) ;
-}
+    background: url("media/background.jpg");
+    height: 800px;
+    background-size: cover;
+ }
+ 
+ .main-nav_div{
+     text-align: right;
+     padding: 20px 25px;
+     position: fixed;
+     width: 100%;
+     z-index: 100;
+     height: 70px;
+     
+ } 
+ 
+ .main-nav_div li{
+     color: #F4D03F;
+     display:inline-block ;
+     list-style-type:none;
+     padding: 0 35px;
+     font-size: 20px;
+     cursor: pointer;
+     font-weight: 800;
+     
+ } 
+ 
+ .main-nav_div li:hover{
+     color: #bb980c;
+ }
 
-/* navbar */
-.main-nav_div{
-    text-align: right;
-    padding: 20px 25px;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    height: 70px;
-    
-} 
-
-.main-nav_div li{
-    color: #8B4513;
-    display:inline-block ;
-    list-style-type:none;
-    padding: 0 35px;
-    font-size: 20px;
-    cursor: pointer;
-    font-weight: 800;
-    
-} 
-
-
-
-.main-nav_div li:hover{
-    color: #db7023;
-}
-
-
-.nav-colored { 
-    background-image: url("media/cool-background.png");
+ .nav-colored { 
+    background-image: url("media/background.jpg");
     background-repeat: no-repeat;
     background-size: 100% 700px;
  }
+
 .nav-transparent { 
     background-image: none;
     background-repeat: none;
     background-size: 100% 700px;
 }
-
-
-.main-text_div{
  
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    z-index: 50;
-}
-
-.main-text_div h1{
-    font-size: 70px;
-    margin-bottom: 15px;
-    color: #191970;
-    display: inline-block;
-}
-
-.name{
-    margin-left: 2rem;
-}
-
-.main-text_div h1:hover,
-.main-text_div h1:focus{
-    
-    animation: effect 2s ease infinite;
-    color: transparent;
-   
-}
-
-@keyframes effect {
-    0% {
-        background-color: #00243b;
-        background-image: linear-gradient(135deg, #978907 0%, #0f1579 100%);
-        -webkit-background-clip: text;
-    } 
-    20% {
-        background-color: #00243b;
-        background-image: linear-gradient(135deg, #0f1579 0%, #4d0e81 100%);
-        -webkit-background-clip: text;
-    } 
-    40% {
-        background-color: #00243b;
-        background-image: linear-gradient(135deg, #4d0e81 0%, #b14609 100%);
-        -webkit-background-clip: text;
-    } 
-    60% {
-        background-color: #00243b;
-        background-image: linear-gradient(135deg, #b14609 0%, #0d5f06 100%);
-        -webkit-background-clip: text;
-    } 
-    80% {
-        background-color: #00243b;
-        background-image: linear-gradient(135deg, #0d5f06 0%, #8f068f 100%);
-        -webkit-background-clip: text;
-    } 
-    100% {
-        background-color: #00243b;
-        background-image: linear-gradient(135deg, #8f068f 0%, #978907 100%);
-        -webkit-background-clip: text;
-    } 
-
-}
-
-.main-text_div h4{
-    font-size: xx-large;
-}
-
-
-
+ 
+ .main-img_div img{
+     width: 30%;
+     height: auto;
+     border: 2px solid black;
+     border-radius: 30%;
+     position: absolute;
+     top: 20%;
+     left: 65%;
+     box-shadow: 10px 10px 50px 15px  black;
+ }
+ 
+ 
+ .main-text_div{
+     position: absolute;
+     top: 30%;
+     left: 5%;
+     z-index: 50;
+ }
+ 
+ .main-text_div h1{
+     font-size: 70px;
+     margin-bottom: 15px;
+     color: #ffffff;
+ }
+ .main-text_div h4{
+     color:#F4D03F ;
+ }
+ 
+ /* portfolio */ 
 #portfolio{
     width: 100%;
     box-sizing: border-box;
 }
 
 
-.card{
-    width: 25%;
-    display: inline-block;
-    margin-left: 6%;
-    border: none;
-    margin-bottom: 2rem;
-    position: relative;
+.portfolio-works{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: space-around;
+    grid-row-gap:2rem ;
 }
 
 .resize-card-img{
@@ -150,6 +98,11 @@
     border-radius: 1rem;
 }
 
+.portfolio-button a,
+.btn-secondary a{
+    color: inherit;
+    text-decoration: none;
+}
 
 .portfolio-works-image_div{
     position: relative;
@@ -178,8 +131,6 @@
     
 } 
 
-
-
 .card-body-description p{
     padding: 2%;
 }
@@ -195,28 +146,25 @@
     margin: 3% auto;
 }
 
-
 .portfolio-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.portfolio-button button{
+    width: 50%;
     text-align: center;
-    margin:0 30% ;
-    width: 40%;
-    padding: 15px;
-    border-radius: 10%/80%; 
     font-weight: 400;
     font-size: larger;
-    justify-content: center;
-    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    
 }
 
-.portfolio-button a,
-.btn-secondary a{
-    color: inherit;
-    text-decoration: none;
-}
 
-.portfolio-button:hover{
-    background-color: #facc42;
-}
+
 
 #about{
     width: 100%;
@@ -276,6 +224,8 @@
 .about-card_me a{
     text-decoration: none;
 }
+
+
 
 /* contact page styles */
 
@@ -340,14 +290,7 @@ textarea[name="message"]{
     font-size: 20px;
 }
 
-
-
 @media only screen and (max-width: 1050px){
-    .card{
-        width: 35%;
-        margin-left: 10%;
-    }
-
     .about-card_wrap{
         display: block;
         
@@ -368,7 +311,29 @@ textarea[name="message"]{
     .social-img{
         font-size: 1.8rem;
     }
+
     
+    
+}
+
+@media only screen and (max-width: 980px){
+    .main-text_div{
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        z-index: 50;
+    }
+    .main-img_div img{
+        padding: 5px;
+        width: 300px;
+        top: 55%;
+        left: 50%;
+        
+    }
+
+    .portfolio-works{
+        grid-template-columns: 40% 40% ;
+    }
 }
 
 
@@ -380,33 +345,16 @@ textarea[name="message"]{
         
     }
 
-    .main-nav_div li{
-        font-size: 100%;
-        padding: 0 5%;        
-    }
-
-    .main-text_div h1{
-        font-size: 60px;
-        margin-bottom: 15px;
-        
-    }
-
-    .card{
-        width: 35%;
-        margin-left: 10%;
-    }
-
-
-    .portfolio-button{
+    /* .portfolio-button{
         width: 70%;
         margin: 0 15%;
-    }
+    } */
 
     .social-text_div{
         font-size: 1.8rem;
         width: 80%;
+        color: rgb(255, 255, 255);
     }
-
 
 }
 
@@ -419,18 +367,6 @@ textarea[name="message"]{
     .main-nav_div li{
         font-size: 100%;
         padding: 0 2%;       
-    }
-
-    
-
-    .main-text_div h1{
-        font-size: 40px;
-        
-    }
-
-    .card{
-        width: 40%;
-        margin-left: 7%;
     }
 
     .about-card{
@@ -449,59 +385,61 @@ textarea[name="message"]{
 
 }
 
+@media only screen and (max-width: 650px){
+    .main-text_div h1{
+        font-size: 55px;
+    }
+    .main-img_div img{
+        width: 250px;
+    }
+
+    .portfolio-works{
+        grid-template-columns: 70% ;
+    }
+}
+
+
 @media only screen and (max-width: 550px){
-    .card{
-        width: 90%;
-        margin-left: 5%;
-    }
-    .about-card{
-        width: 80%;
-        margin: 2% 10%;
-    }
-    
+
     .main-nav_div ul{
         margin-left: -2rem;
         width: 500px;
         
     }
-    .main-nav_div li{
-        color: white;
-    }
-    .main-nav_div li:hover,
-    .main-nav_div li:focus{
-        color: #ffc107;
-    }
 
-    #main-view{
-        background-color: #0B8CD5;
-        background-image: url("file:///home/shamsucm/Downloads/trianglify-lowres%20(1).png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        box-sizing: border-box;
-        width: 100%;
-        height: 850px;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        box-shadow: 0rem 0rem 10rem 5px rgb(216, 214, 214);
+    .main-text_div{
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        z-index: 50;
     }
-
-    .name{
-        margin-left: 0;
-        color: white;
-    }
-
     .main-text_div h1{
-        color: white;
+        font-size: 40px;
+
+    }
+    .main-img_div img{
+        padding: 5px;
+        width: 300px;
+        top: 55%;
+        left: 10%;
         
     }
+    .about-card{
+        width: 80%;
+        margin: 2% 10%;
+    }
 
-    .nav-colored { 
-        background: #0B8CD5;
-        background-repeat: no-repeat;
-        background-size: 100% 700px;
-        border-bottom: 1px solid black;
-     }
+}
 
+
+@media only screen and (max-width: 350px){
+
+    .main-img_div img{
+        padding: 5px;
+        width: 200px;
+        top: 65%;
+        left: 5%;
+        
+    }
 
 }

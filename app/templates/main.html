@@ -31,8 +31,8 @@
     {% comment %} first page  {% endcomment %}
     <section id="main-view">
 
-        
-        <div id ="mynav"class="main-nav_div">
+
+           <div id ="mynav"class="main-nav_div">
             <ul>
                <a href="#main-view"><li>Home</li></a> 
                <a href="#portfolio"><li>Portfolio</li></a> 
@@ -40,15 +40,19 @@
                <a href="#subheading_contact"><li>Contact</li></a>
             </ul>
         </div> 
-
-        <div class="main-text_div">
-            <h1>Hey</h1>   
-            <h1 class= "name">I am Shamsu cm </h1> 
-            <h4><span style="color: rgb(0, 0, 0);">Python Django</span> Developer  </h4>
-        </div>
         
+        <div class="main-text_div">
+            <h1>hey ,</h1>
+            <h1> I am shamsu cm :)</h1>
+            <h4>Full Stack</span> Developer  </h4>
+        </div>
+
+        <div class="main-img_div">
+           <img src="{% static 'media/me.jpeg' %}" alt="">
+        </div>
     </section>
 
+  
     {% comment %} portfoli page {% endcomment %}
     <section id="portfolio">
         <h1 class="subheading">My Works</h1>
@@ -81,8 +85,10 @@
              {% endfor %}
         
         </div>
-
-        <button class="portfolio-button btn btn-warning"><a href="https://github.com/shamsuchoyimadathil/">See more works on github</a> </button>
+        <div class="portfolio-button">
+            <button class="btn btn-warning"><a href="https://github.com/shamsuchoyimadathil/">See more works on github</a> </button>
+        </div>
+       
 
         
     </section>
@@ -157,13 +163,12 @@
                 <form action="" method="POST">
                     {% csrf_token %}
                     <label for="">Your name:</label><br>
-                    <input name="name" type="text" class="form-control" placeholder="name"><br>
+                    <input name="name" type="text" class="form-control" placeholder="name" required><br>
                     <label for="">Your email:</label><br>
-                    <input name="email" type="email" class="form-control" placeholder="email"><br>
+                    <input name="email" type="email" class="form-control" placeholder="email" required><br>
                     <label for="">message:</label> <br>
-                    <textarea type="text" name="message" placeholder="message..." class="form-control" id="" cols="30" rows="10"></textarea> <br>
+                    <textarea type="text" name="message" placeholder="message..." class="form-control" id="" cols="30" rows="10" required></textarea> <br>
                     <button class="btn btn-secondary">Send message</button> 
-                    <h4 class="text-justify text-center pt-3 text-dark">{{no_info}}</h4>
                 </form>
             
             </div> 
@@ -181,11 +186,11 @@
                     <p>Don't try to explain the code. Show them</p>
                 </div>  
                 <div class="social-img_div">
-                    <a href=""><i class="fab fa-github social-img" style="color:gray"></i></a>
-                    <a href=""><i class="fab fa-stack-overflow social-img" style="color:#ef8236"></i></a>
-                    <a href=""><i class="fab fa-reddit-square social-img" style="color:red"></i></a>
+                    <a href="https://github.com/shamsuchoyimadathil/"><i class="fab fa-github social-img" style="color:gray"></i></a>
+                    <a href="https://stackoverflow.com/users/15702044/shamsucm"><i class="fab fa-stack-overflow social-img" style="color:#ef8236"></i></a>
+                    <a href="https://www.reddit.com/user/shamsu_cm"><i class="fab fa-reddit-square social-img" style="color:red"></i></a>
                     <a href=""><i class="fab fa-instagram social-img" style="color: rgb(189, 0, 189);"></i></a>
-                    <a href=""><i class="fab fa-linkedin-in social-img" style="color:#0e76a8"></i></a>
+                    <a href="https://codepen.io/shamsucm"><i class="fab fa-codepen social-img" style="color:#0e76a8"></i></a>
                 </div>
                 <div class="social-copyright_div">
                     <p>created by me © shamsu cm </p>

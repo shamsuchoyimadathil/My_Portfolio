@@ -22,7 +22,7 @@ SECRET_KEY = 'django-insecure-a2o*^14c6fj4=*8(971@_qbki7=@#dob*v4wrhe6w+ilc0p%l^
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','shamsucm.herokuapp.com']  
 
@@ -124,6 +124,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static/'),
 ]
 STATIC_ROOT = os.path.join(BASE_DIR,'static_deploy')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
